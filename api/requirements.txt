@@ -1,0 +1,28 @@
+# --- Core Web Framework ---
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+python-multipart>=0.0.9
+python-dotenv>=1.0.1
+pydantic>=2.6.1
+
+# --- LangChain & Ecosystem ---
+langchain>=0.2.0
+langchain-core>=0.2.0
+langchain-openai>=0.1.7
+langchain-community>=0.2.0
+langgraph>=0.0.42
+langsmith>=0.1.43
+langchain-chroma>=0.1.0
+langchain-tavily>=0.0.3
+
+# --- Vector DB ---
+chromadb>=0.5.0
+
+# --- Document Loaders ---
+pypdf>=4.2.0
+docx2txt>=0.8
+unstructured[html]>=0.15.0
+tika>=2.6.0
+
+# --- Utilities ---
+requests>=2.32.0
