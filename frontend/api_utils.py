@@ -4,7 +4,7 @@ import requests
 import streamlit as st
 from typing import Optional, List, Dict, Any
 
-BACKEND_URL = "http://127.0.0.1:8000"
+BACKEND_URL = "https://final-project-atomcamp.onrender.com"
 
 def get_api_response(question: str, session_id: Optional[str], model: str) -> Optional[Dict[str, Any]]:
     headers = {
