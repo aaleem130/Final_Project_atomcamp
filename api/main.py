@@ -25,7 +25,7 @@ from .utils import get_or_create_session_id, history_to_lc_messages, append_mess
 from .langchain_utils import contextualise_chain
 
 logging.basicConfig(filename='app.log', level=logging.INFO)
-app = FastAPI(title="RAG+Web Agent API")
+app = FastAPI(title="Backend - AI Exam & Study Assistant")
 
 
 # CORS (allow Streamlit at :8501 and local dev)
@@ -42,7 +42,7 @@ app.add_middleware(
 
 @app.get("/")
 def root():
-    return {"status": "ok", "service": "RAG+Web Agent API"}
+    return {"status": "ok", "service": "Backend - AI Exam & Study Assistant"}
 
 @app.get("/health")
 def health():
