@@ -5,7 +5,7 @@ from api_utils import upload_document, list_documents, delete_document
 
 def display_sidebar():
     # Sidebar: Model Selection
-    model_options = ["gpt-4.1-mini", "gpt-4.1"]  # Match your backend model names
+    model_options = ["gpt-4.1-mini", "gpt-4.1"]  
     st.sidebar.selectbox("Select Model", options=model_options, key="model")
 
     # --- Document Management ---
