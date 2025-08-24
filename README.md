@@ -21,6 +21,8 @@ The agent integrates **LangGraph, LangChain, Chroma, and Tavily Search API** to 
 - [Tech Stack](#tech-stack)
 - [How It Works](#how-it-works)
 - [Project Structure](#project-structure)
+- [Installation and Setup on Local Machine](#installation-and-setup-on-local-machine)
+- [Live Demo](#live-demo)
 
 
 
@@ -149,5 +151,56 @@ Final_Project_atomcamp/
 ├── .env                     # Environment variables
 └── README.md               # This file
 ```
+
+## Installation and Setup on Local Machine
+
+### 1. Clone Repository
+```bash
+git clone https://github.com/aaleem130/Final_Project_atomcamp.git
+cd Final_Project_atomcamp
+```
+
+### 2. Setup .env file
+Create a .env file in the root directory:
+```bash
+OPENAI_API_KEY=your_openai_api_key
+TAVILY_API_KEY=your_tavily_api_key
+```
+
+### 3.	Create a virtual environment (recommended):
+
+On Windows
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+On macOS/Linux
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 4. Backend Setup
+
+```bash
+cd api
+pip install -r requirements.txt
+uvicorn main:app --reload --port 8000
+```
+
+### 5. Frontend Setup
+
+```bash
+cd frontend
+pip install -r requirements.txt
+streamlit run streamlit_app.py
+```
+
+
+## Live Demo
+
+- **Frontend (Streamlit):** [Try Here](https://finalprojectatomcamp-abdulaleem.streamlit.app/)  
+- **Backend (FastAPI Docs):** [Explore API](https://final-project-atomcamp.onrender.com/docs)
 
 
